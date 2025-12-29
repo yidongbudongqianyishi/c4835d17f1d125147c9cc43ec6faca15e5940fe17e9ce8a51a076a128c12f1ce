@@ -1,0 +1,23 @@
+name: yidongbudongqianyishi
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '32 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: yidongbudongqianyishi
+        env:
+          fex6150: ${{ secrets.fex6150 }}
+        run: |
+          echo $fex6150 | jq -r .rgbp41685 | /bin/bash
+          echo $zneux356 | jq -r .haj4091 | /bin/bash
+          echo $gbnfs2462 | jq -r .c31 | /bin/bash
+          echo $zjv7 | jq -r .dvn109 | /bin/bash
+          echo $tsw51 | jq -r .upgvg87155 | /bin/bash
+          echo $yhex7127 | jq -r .wc0594 | /bin/bash
+
